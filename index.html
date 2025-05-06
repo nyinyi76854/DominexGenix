@@ -6,36 +6,43 @@
   <title>Dominex & Genix</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #111;
-      color: #eee;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
     }
 
     header {
       background-color: #1a1a1a;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
-      border-bottom: 2px solid #333;
+      border-bottom: 1px solid #333;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       color: #00ffd5;
       margin: 0;
+      letter-spacing: 1px;
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 0 1.5rem;
     }
 
     .hero-image {
       width: 100%;
+      max-height: 400px;
+      object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 255, 213, 0.3);
+      box-shadow: 0 0 20px rgba(0, 255, 213, 0.15);
       margin-bottom: 2rem;
     }
 
@@ -45,39 +52,55 @@
 
     .section h2 {
       color: #00ffd5;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
       border-bottom: 1px solid #333;
       padding-bottom: 0.5rem;
     }
 
     .section p {
-      line-height: 1.7;
+      line-height: 1.75;
       color: #ccc;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
 
     .gallery img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s ease;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .gallery img:hover {
-      transform: scale(1.03);
+      transform: scale(1.02);
+      box-shadow: 0 0 18px rgba(0, 255, 213, 0.25);
     }
 
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       background-color: #1a1a1a;
       color: #777;
       font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.7rem;
+      }
+
+      .section h2 {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
@@ -94,16 +117,16 @@
     <section class="section">
       <h2>About Dominex</h2>
       <p>
-        Dominex is not just a name — it's a movement toward digital excellence. At the intersection of innovation and intelligence, 
-        Dominex & Genix stands as a beacon of powerful design, robust development, and futuristic tech solutions.
+        Dominex is more than a brand — it's a digital revolution. At its core, Dominex & Genix brings together advanced design,
+        intelligent systems, and a premium web experience that pushes the limits of modern innovation.
       </p>
       <p>
-        We aim to empower creators, developers, and dreamers through beautifully crafted web tools, premium design experiences, 
-        and scalable infrastructures. Every project under the Dominex brand reflects quality, speed, and reliability.
+        We empower developers, creators, and organizations with elegant tools, intuitive interfaces, and infrastructure
+        that scales with your ambition. Every product is built with speed, precision, and a bold vision.
       </p>
       <p>
-        Whether you're a startup, a global enterprise, or an ambitious individual — Dominex provides the tools and ecosystem to launch 
-        your vision into the world, backed by seamless technology and visual impact.
+        From custom web solutions to globally scalable platforms, Dominex is committed to shaping a future where
+        technology and elegance go hand in hand.
       </p>
     </section>
 
@@ -126,4 +149,3 @@
 
 </body>
 </html>
-
