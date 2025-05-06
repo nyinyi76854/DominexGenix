@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dominex & Genix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #333;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffd5;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .hero-image {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 213, 0.3);
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      color: #00ffd5;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .section p {
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dominex & Genix</h1>
+  </header>
+
+  <div class="container">
+
+    <img src="assets/dominex.jpg" alt="Dominex Overview" class="hero-image">
+
+    <section class="section">
+      <h2>About Dominex</h2>
+      <p>
+        Dominex is not just a name — it's a movement toward digital excellence. At the intersection of innovation and intelligence, 
+        Dominex & Genix stands as a beacon of powerful design, robust development, and futuristic tech solutions.
+      </p>
+      <p>
+        We aim to empower creators, developers, and dreamers through beautifully crafted web tools, premium design experiences, 
+        and scalable infrastructures. Every project under the Dominex brand reflects quality, speed, and reliability.
+      </p>
+      <p>
+        Whether you're a startup, a global enterprise, or an ambitious individual — Dominex provides the tools and ecosystem to launch 
+        your vision into the world, backed by seamless technology and visual impact.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="assets/photo1.jpg" alt="Photo 1">
+        <img src="assets/photo2.jpg" alt="Photo 2">
+        <img src="assets/photo3.jpg" alt="Photo 3">
+        <img src="assets/photo4.jpg" alt="Photo 4">
+        <img src="assets/photo5.jpg" alt="Photo 5">
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Dominex & Genix. All rights reserved.
+  </footer>
+
+</body>
+</html>
 
