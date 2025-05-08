@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genix - Falcon S & FWord</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
 
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header img {
+            width: 200px;
+            margin: 0 1rem;
+        }
+
+        .apps {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .download-btn {
+            background-color: #00ffd5;
+            color: #121212;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .download-btn:hover {
+            background-color: #00e6c1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="assets/genix.png" alt="Genix">
+    </div>
+
+    <div class="apps">
+        <img src="assets/falcons.png" alt="Falcon S">
+        <img src="assets/fword.png" alt="FWord">
+    </div>
+
+    <div class="btn-container">
+        <a href="https://apkpure.com/falcon-s/com.message.noblechat/download" class="download-btn">Download Falcon S</a>
+        <a href="https://apkpure.com/fword/com.falcons.app/download" class="download-btn">Download FWord</a>
+    </div>
+
+</body>
+</html>
