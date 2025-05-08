@@ -19,7 +19,7 @@
 
     header {
       background-color: #1a1a1a;
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
       text-align: center;
       border-bottom: 1px solid #333;
     }
@@ -29,6 +29,40 @@
       color: #00ffd5;
       margin: 0;
       letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00ffd5;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #00ffd5;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #ffffff;
     }
 
     .container {
@@ -125,6 +159,11 @@
 
   <header>
     <h1>Dominex & Genix</h1>
+    <nav>
+      <a href="/about/index.html">About</a>
+      <a href="/download/index.html">Downloads</a>
+      <a href="/friendship/index.html">Friends</a>
+    </nav>
   </header>
 
   <div class="container">
