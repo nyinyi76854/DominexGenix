@@ -15,12 +15,36 @@
     body {
       background-color: #0d0d0d;
       color: #e0e0e0;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      color: #00ffd5;
+    }
+    nav {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #00ffd5;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00bfa5;
+    }
+    .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      flex-direction: column;
       gap: 2rem;
+      padding: 2rem;
     }
     .image-container {
       display: flex;
@@ -28,9 +52,9 @@
     }
     img {
       width: 100%;
-      max-width: 500px;
+      max-width: 400px;
       height: auto;
-      border-radius: 10px;
+      border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 255, 213, 0.2);
       transition: transform 0.3s ease;
     }
@@ -38,33 +62,54 @@
       transform: scale(1.05);
     }
     .description {
-      max-width: 900px;
-      text-align: justify;
+      max-width: 500px;
       line-height: 1.75;
       color: #b3b3b3;
       padding: 0 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+      background-color: #1a1a1a;
+      color: #777;
+      border-top: 1px solid #333;
     }
   </style>
 </head>
 <body>
 
-  <div class="image-container">
-    <img src="https://nyinyi76854.github.io/DominexGenix/assets/photo9.jpg" alt="My Friend">
-    <img src="https://nyinyi76854.github.io/DominexGenix/assets/photo10.jpg" alt="My Friend">
+  <header>
+    <h1>My Friend</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#photos">Photos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container" id="photos">
+    <div class="image-container">
+      <img src="https://nyinyi76854.github.io/DominexGenix/assets/photo9.jpg" alt="My Friend">
+      <img src="https://nyinyi76854.github.io/DominexGenix/assets/photo10.jpg" alt="My Friend">
+    </div>
+
+    <div class="description">
+      <p>
+        She is my friend, a truly remarkable person who brings light and positivity wherever she goes. Her presence is comforting, and her smile has a way of brightening even the darkest days. Over the years, she has been a constant source of support, always ready to listen, help, and share in both joys and challenges. Her kindness is boundless, and her strength is inspiring.
+      </p>
+      <p>
+        Together, we have shared countless memories, from moments of laughter to deep conversations that last for hours. Her perspective on life is both refreshing and grounding, reminding me of what truly matters. She has an unyielding passion for growth and learning, always striving to be the best version of herself, and encouraging those around her to do the same.
+      </p>
+      <p>
+        I'm grateful to have her as a friend, and I look forward to many more memories together, always pushing each other to new heights and supporting one another through all that life brings.
+      </p>
+    </div>
   </div>
 
-  <div class="description">
-    <p>
-      She is my friend, a truly remarkable person who brings light and positivity wherever she goes. Her presence is comforting, and her smile has a way of brightening even the darkest days. Over the years, she has been a constant source of support, always ready to listen, help, and share in both joys and challenges. Her kindness is boundless, and her strength is inspiring.
-    </p>
-    <p>
-      Together, we have shared countless memories, from moments of laughter to deep conversations that last for hours. Her perspective on life is both refreshing and grounding, reminding me of what truly matters. She has an unyielding passion for growth and learning, always striving to be the best version of herself, and encouraging those around her to do the same.
-    </p>
-    <p>
-      I'm grateful to have her as a friend, and I look forward to many more memories together, always pushing each other to new heights and supporting one another through all that life brings.
-    </p>
-  </div>
+  <footer>
+    &copy; 2025 My Friend. All rights reserved.
+  </footer>
 
 </body>
 </html>
-
